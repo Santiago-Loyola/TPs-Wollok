@@ -1,12 +1,9 @@
-/** Para poder entregar el paquete el servicio tiene que estar pago y 
-el mensajero debe poder llegar al destino*/
-
 object servicio {
 	var servicioPago
 
 	method realizarServicio(mensajero,destino){
 		self.estaPago()
-	return destino.puedePasar(mensajero)
+		return destino.puedePasar(mensajero)
 	}
 	method estaPago(){
 	return servicioPago
@@ -37,7 +34,6 @@ object roberto {
 		peso = kg
 	}
 }
-
 
 object cuckNorris {
 	var peso = 900
@@ -76,7 +72,6 @@ object brooklyn {
 	
 	method puedePasar(persona){
 		return 1000 > persona.cuantoPeso()
-		
 	}
 }
 

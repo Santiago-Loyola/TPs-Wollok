@@ -74,7 +74,7 @@ object neo {
 
 object brooklyn {
 	
-	method puedePasar (persona){
+	method puedePasar(persona){
 		return 1000 > persona.cuantoPeso()
 		
 	}
@@ -82,7 +82,7 @@ object brooklyn {
 
 object laMatrix {
 	
-	method puedeHacerUnaLlamada (persona){
+	method puedePasar(persona){
 		return persona.puedoLlamar()
 	}
 }

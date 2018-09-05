@@ -6,7 +6,7 @@ object servicio {
 
 	method realizarServicio(mensajero,destino){
 		self.estaPago()
-		destino.puedePasar(mensajero)
+	return destino.puedePasar(mensajero)
 	}
 	method estaPago(){
 	return servicioPago

@@ -1,6 +1,21 @@
 /** Para poder entregar el paquete el servicio tiene que estar pago y 
 el mensajero debe poder llegar al destino*/
 
+object servicio {
+	var servicioPago
+
+	method realizarServicio(mensajero,destino){
+		self.estaPago()
+		llegamosAlDestino(mensajero,destino)
+	}
+	method estaPago(){
+	return servicioPago
+	}
+	method pagarServicio(){
+	servicioPago = true
+	}
+}
+
 object roberto {
 	var transporte 
 	var peso  

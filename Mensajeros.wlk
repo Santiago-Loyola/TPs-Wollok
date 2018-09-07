@@ -1,4 +1,4 @@
-object servicio {
+object paquete {
 	var servicioPago
 
 	method realizarServicio(mensajero,destino){

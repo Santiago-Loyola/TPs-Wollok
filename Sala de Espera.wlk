@@ -63,8 +63,11 @@ object abuelo {
 }
 
 object maggie {
+	var tienePaleta = fase
 	
 	method irAlHospital(){
 	hospital.anunciarseSalaDeEspera(self)
+	tienePaleta = true
 	}
+	method atender(){}
 }

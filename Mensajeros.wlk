@@ -1,7 +1,8 @@
 object paquete {
 	var servicioPago
+	var destino
 
-	method realizarServicio(mensajero,destino){
+	method realizarServicio(mensajero){
 		self.estaPago()
 		return destino.puedePasar(mensajero)
 	}
@@ -10,6 +11,9 @@ object paquete {
 	}
 	method pagarServicio(){
 	servicioPago = true
+	}
+	method miDestinoEs(destino){
+	destino = destino
 	}
 }
 

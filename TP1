@@ -14,26 +14,28 @@ object rolando {
 		if(hechizoPreferido==espectroMalefico){poder=espectroMalefico.length()}
 		else poder=10
 	
-
-
 	  nivelHechiceria=(valorBase*poder)+valorFuerzaOscura
-		
+	
 	}
 	
 	method aplicarEspectroMalefico(){
-		hechizoPreferido=espectroMalefico
+	hechizoPreferido=espectroMalefico
+	
 	}
 	
-		method aplicarHechizoBasico(){
-		hechizoPreferido=hechizoBasico
+	method aplicarHechizoBasico(){
+	hechizoPreferido=hechizoBasico
 	}
 	
 	method soyPoderoso(){
 		if(hechizoPreferido.length()>15) return true
 		return false
 	}
+	method renombrarEspectroMalefico(algo){
+		espectroMalefico = algo
+	}
+	method verEclipse(){
+		valorFuerzaOscura = valorFuerzaOscura*2
+	}
 	
-	
-	
-
 }

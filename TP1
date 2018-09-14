@@ -1,0 +1,39 @@
+/** First Wollok example */
+object rolando {
+	
+	var valorBase=3
+	var hechizoPreferido = espectroMalefico 
+	var valorFuerzaOscura=5
+	var espectroMalefico = "Espectro Malefico"
+	var hechizoBasico = "Hechizo Basico"
+	var nivelHechiceria
+	
+	method determinarNivelHechiceria(){
+		
+		var poder
+		if(hechizoPreferido==espectroMalefico){poder=espectroMalefico.length()}
+		else poder=10
+	
+
+
+	  nivelHechiceria=(valorBase*poder)+valorFuerzaOscura
+		
+	}
+	
+	method aplicarEspectroMalefico(){
+		hechizoPreferido=espectroMalefico
+	}
+	
+		method aplicarHechizoBasico(){
+		hechizoPreferido=hechizoBasico
+	}
+	
+	method soyPoderoso(){
+		if(hechizoPreferido.length()>15) return true
+		return false
+	}
+	
+	
+	
+
+}

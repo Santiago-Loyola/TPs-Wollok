@@ -1,0 +1,25 @@
+/** First Wollok example */
+
+class Persona{
+	var property cordura
+	var parasitos = #{}
+
+	method reducirCordura(cant){
+		cordura = self.cordura() - cant
+	}
+	method agregarParasito(parasito){
+		parasitos.add(parasito)
+	}
+}
+
+
+class Parasito {
+	var property poderDeCordura 
+	var property nivelDeLastima 
+	
+	method infectaA(persona){
+		persona.agregarParasito(self)
+		persona.reducirCordura(self.poderDeCordura())
+	}
+	
+}
